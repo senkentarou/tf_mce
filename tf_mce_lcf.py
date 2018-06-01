@@ -227,11 +227,11 @@ if __name__ == "__main__":
             ax2.set_xlabel("Epoch")
             ax2.set_ylabel("Training error", color="orange")
             ax2.plot(res_n, res_tr_err, c="orange")
-            ax2.set_ylim((0, 0.5))
+            ax2.set_ylim((0, 0.3))
             ax2_1 = ax2.twinx()
             ax2_1.set_ylabel("Testing error", color="red")
             ax2_1.plot(res_n, res_ts_err, c="red")
-            ax2_1.set_ylim((0, 0.5))
+            ax2_1.set_ylim((0, 0.3))
             ax2.set_title("Errors")
             save_plt_fig(fig, "%s/%s_values_%06d.png" % (res_out_dir, dataset_name, n))
 
